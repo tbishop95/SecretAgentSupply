@@ -1,0 +1,98 @@
+html {
+  font-size: 18px;
+}
+
+/*Header Styling*/
+.header .logo {
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+
+.header{
+  background-color: black;
+  color: white;
+  height: 2.82rem;
+}
+
+.header span {
+  font-size: 1rem;
+  font-family: Helvetica;
+  text-transform: uppercase;
+}
+
+.logo {
+  max-width: 960px;
+  padding-left: 10rem;
+  padding-top: 0.66em;
+  padding-bottom: 0.66rem;
+}
+
+.logo img {
+  width: 2.33rem;
+  height: 1.66rem;
+  padding-right: 2rem;
+}
+
+div {
+  display: block;
+}
+
+/*Banner & Nav*/
+
+.banner {
+  background-image: url(/Users/thomasbishop/Documents/Projects/SecretAgentSupply/resources/images/moto.jpeg);
+  background-size: cover;
+  height: 25rem;
+  display: flex;
+  align-items: center;
+}
+
+.bannertext {
+  background-color: #000000;
+  width: 25rem;
+  height: 10rem;
+  font-family: Helvetica;
+  color: #ffffff;
+  font-weight: bold;
+  margin-left: 10rem;
+}
+
+.banner h4 {
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 3rem;
+  padding-top: 2rem;
+}
+
+.banner h1 {
+  font-size: 2rem;
+  padding-left: 3rem;
+}
+
+nav {
+  background-color: firebrick;
+  height: 3rem;
+}
+
+.navitems {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.9rem;
+  color: white;
+  font-size: 1rem;
+  font-family: Helvetica;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.mobilenav {
+  display: none;
+}
+
+.mobilenavitems {
+  display: none;
+}
