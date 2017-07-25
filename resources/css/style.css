@@ -79,7 +79,7 @@ div {
 
 nav {
   background-color: firebrick;
-  height: 3rem;
+  height: 1.5rem;
 }
 
 .navitems {
@@ -87,7 +87,6 @@ nav {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding-top: 0.9rem;
   color: white;
   font-size: 1rem;
@@ -96,11 +95,7 @@ nav {
   list-style: none;
 }
 
-.mobilenav {
-  display: none;
-}
-
-.mobilenavitems {
+.mobile-nav {
   display: none;
 }
 
@@ -144,7 +139,7 @@ nav {
 .business-info {
   display: flex;
   justify-content: space-around;
-   margin: 3em 0px 0px ;
+  margin: 3em 0px 0px ;
 }
 
 .info {
@@ -161,10 +156,99 @@ nav {
 
 /*Footer*/
 footer {
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 5rem;
   background-color: black;  color: white;
   font-family: Helvetica;
   margin-top: 4rem;
-  padding: 4rem 0;
+  padding: 2rem 0;
+}
+
+/*Tablet*/
+@media only screen and (max-width: 1024px) {
+  .navitems {
+    display: none;
+  }
+
+  .product.glasses {
+    display: none;
+  }
+
+  .products {
+    justify-content: space-around;
+  }
+
+  .product-image {
+    width: 47%;
+  }
+
+  .mobile-nav {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding-top: 0rem;
+    color: white;
+    font-size: 1rem;
+    font-family: Helvetica;
+    justify-content: center;
+    list-style: none;
+  }
+
+  .info {
+    width: 35%;
+    justify-content: space-between;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+}
+
+/*Mobile*/
+@media only screen and (max-width: 470px) {
+  .mobile-nav {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    padding-top: 0rem;
+    color: white;
+    font-size: 1rem;
+    font-family: Helvetica;
+    justify-content: center;
+    list-style: none;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  .product.watch {
+    display: none;
+  }
+  .product-image {
+    width: 90%;
+  }
+
+  .bannertext {
+    width:100%;
+    background-color: #000000;
+    height: 10rem;
+    font-family: Helvetica;
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: 0rem;
+  }
+
+  .info {
+    width: 45%;
+    padding-top: 1rem;
+  }
+
+  .business-info {
+    flex-direction: column;
+    align-items: center;
+  }
 }
