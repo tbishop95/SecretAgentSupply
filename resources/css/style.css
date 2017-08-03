@@ -46,7 +46,7 @@ div {
 /*Banner & Nav*/
 
 .banner {
-  background-image: url(/Users/thomasbishop/Documents/Projects/SecretAgentSupply/resources/images/moto.jpeg);
+  background-image: url(../images/moto.jpeg);
   background-size: cover;
   height: 25rem;
   display: flex;
@@ -208,7 +208,7 @@ footer {
 }
 
 /*Mobile*/
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 555px) {
   .mobile-nav {
     max-width: 960px;
     margin: 0 auto;
